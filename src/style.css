@@ -86,3 +86,22 @@ select{font-size:16px;max-width:260px;min-height:42px}
 
 /* Preserve the report's spacing without displaying the reading guide. */
 .reading-note-spacer{visibility:hidden;pointer-events:none;user-select:none}
+
+.respondent-panel table{table-layout:fixed;min-width:850px}
+.respondent-panel th:first-child{width:23%}
+.respondent-panel th:nth-child(2){width:25%}
+.respondent-panel th:nth-child(3){width:25%}
+.respondent-panel th:nth-child(4){width:27%}
+.placeholder-text,.placeholder-text button{color:#aaa}
+.respondent-row{cursor:pointer}
+.respondent-row:hover{background:#fafafa}
+.row-toggle{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:0;font:inherit;line-height:inherit;color:inherit;min-height:44px}
+.row-toggle:focus-visible{outline:2px solid #000;outline-offset:4px}
+.chevron{flex-shrink:0;transition:transform .15s}
+.chevron.expanded{transform:rotate(180deg)}
+.respondent-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:0;padding:12px}
+.respondent-detail-grid>div:last-child{grid-column:1/-1}
+.respondent-detail-grid dt{font-weight:600;font-size:17px;margin-bottom:8px}
+.respondent-detail-grid dd{margin:0;font-size:17px;line-height:1.7}
+.report-spacer{height:140px}
+@media(max-width:700px){.respondent-detail-grid{grid-template-columns:1fr}.respondent-details>td{padding:16px}.report-spacer{height:160px}}
