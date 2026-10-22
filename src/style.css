@@ -67,3 +67,13 @@ select{font-size:16px;max-width:260px;min-height:42px}
 .overview-content li{padding-left:3px;margin:3px 0}
 @media(max-width:1150px){.research-overview .hero-row{flex-direction:column;gap:18px}}
 @media(max-width:520px){.research-overview h1{font-size:32px;letter-spacing:-.7px}.research-identity{margin:22px 0 28px}.overview-content h2{font-size:23px}.overview-content p,.overview-content li{font-size:18px}.overview-content>section{margin-top:25px}}
+
+/* The methodology page contains only the research introduction blocks. */
+.research-overview{padding-bottom:40px}
+.research-overview .hero-row{border:1px solid #ddd;border-radius:12px;padding:28px}
+.research-identity{padding:0 4px}
+.overview-content{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:none}
+.overview-content>section{margin:0;border:1px solid #ddd;border-radius:12px;padding:26px}
+.overview-content>section:first-child,.overview-content>section:last-child{grid-column:1/-1}
+@media(max-width:1000px){.overview-content{grid-template-columns:1fr}}
+@media(max-width:520px){.research-overview .hero-row,.overview-content>section{padding:22px}.overview-content{gap:16px}}
