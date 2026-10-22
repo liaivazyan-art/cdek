@@ -83,3 +83,6 @@ select{font-size:16px;max-width:260px;min-height:42px}
 .research-overview .overview-content{margin-top:24px}
 .overview-content>.overview-audience{grid-column:1/-1}
 @media(min-width:701px){.research-overview .overview-content{grid-template-columns:1fr 1fr}}
+
+/* Preserve the report's spacing without displaying the reading guide. */
+.reading-note-spacer{visibility:hidden;pointer-events:none;user-select:none}
