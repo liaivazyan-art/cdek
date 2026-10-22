@@ -12,7 +12,7 @@ export default function ResearchTable({section}) {
  const schema=reportTables[section.id];
  const [role,setRole]=useState(''),[query,setQuery]=useState(''),[category,setCategory]=useState(''),[expanded,setExpanded]=useState(null);
  const roles=[...new Set(schema.records.flatMap(r=>r.roles || [r.role]).filter(Boolean))];
- const records=schema.records.length?schema.records:Array.from({length:3},(_,i)=>({id:`${section.id}-slot-${i}`,placeholder:true}));
+ const records=schema.records.length?schema.records:Array.from({length:schema.placeholderCount ?? 3},(_,i)=>({id:`${section.id}-slot-${i}`,placeholder:true}));
  const rows=filterRecords(records.map(r=>r.placeholder?{...r,...Object.fromEntries(schema.columns.map(c=>[c.key,placeholder]))}:r),schema.columns,{role,query,category});
  function detailValue(record,field){
   if(record.placeholder)return null;
