@@ -105,3 +105,13 @@ select{font-size:16px;max-width:260px;min-height:42px}
 .respondent-detail-grid dd{margin:0;font-size:17px;line-height:1.7}
 .report-spacer{height:140px}
 @media(max-width:700px){.respondent-detail-grid{grid-template-columns:1fr}.respondent-details>td{padding:16px}.report-spacer{height:160px}}
+
+.research-table th:nth-child(n){width:25%}
+.research-table.columns-5 table{min-width:1100px}
+.research-table.columns-5 th:nth-child(n){width:20%}
+.research-table select[aria-label="Категория рекомендации"]{max-width:330px}
+.scenario-kind,.recommendation-category{display:block;border:1px solid #000;border-radius:4px;padding:3px 7px;margin-top:10px;font-size:14px;font-weight:400}
+.kind-existing{font-weight:600}.kind-potential{border-style:dashed}
+.detail-items{list-style:disc;padding-left:20px;margin:0}
+.detail-link{text-decoration:underline;overflow-wrap:anywhere}
+.respondent-details blockquote{border-left:2px solid #ddd;padding-left:14px;margin:8px 0}
