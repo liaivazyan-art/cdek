@@ -77,3 +77,5 @@ select{font-size:16px;max-width:260px;min-height:42px}
 .overview-content>section:first-child,.overview-content>section:last-child{grid-column:1/-1}
 @media(max-width:1000px){.overview-content{grid-template-columns:1fr}}
 @media(max-width:520px){.research-overview .hero-row,.overview-content>section{padding:22px}.overview-content{gap:16px}}
+
+@media(max-width:800px){.mobile-nav-toggle{position:fixed;top:12px;right:16px;z-index:40;display:grid;place-items:center;width:44px;height:44px;border:1px solid #000;border-radius:6px;background:#fff}.sidebar.open{top:0;padding-top:24px}.main-wrap>main{padding-top:76px}}
