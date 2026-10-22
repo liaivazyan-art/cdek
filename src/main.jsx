@@ -22,7 +22,7 @@ function App(){
  <section className="overview-audience"><h2>Целевая аудитория</h2><ul>{overview.audience.map(role=><li key={role}>{role}</li>)}</ul></section>
  <section><h2>Предмет исследования</h2><p>{overview.subject}</p></section>
  </div></section> : <>
- <div className="section-heading"><div className="section-counter">0{sections.indexOf(section)+1} <span>/ 06</span></div><span className="section-rule"/><span className="section-kicker">СТРУКТУРА ИССЛЕДОВАНИЯ</span></div><div className="section-title-row"><div><h2>{section.title}</h2><p>{section.description}</p></div></div>
+ <div className="section-heading"><div className="section-counter">0{sections.indexOf(section)+1} <span>/ {String(sections.length).padStart(2,'0')}</span></div><span className="section-rule"/><span className="section-kicker">СТРУКТУРА ИССЛЕДОВАНИЯ</span></div><div className="section-title-row"><div><h2>{section.title}</h2><p>{section.description}</p></div></div>
  {active === 'users' ? <RespondentTable/> : <ResearchTable key={active} section={section}/>}
  <div className="bottom-grid"><div className="report-spacer" aria-hidden="true"/><button className="next-section" onClick={()=>navigate(active==='recommendations'?sections[0].id:sections[sections.indexOf(section)+1].id)}><span>{active==='recommendations'?'К началу отчёта':<>СЛЕДУЮЩИЙ РАЗДЕЛ<strong>{sections[sections.indexOf(section)+1].short}</strong></>}</span><ArrowRight size={22}/></button></div><footer className="page-footer"><span>Feedback System <span> / </span> UX Research</span><span>Сначала понять. Затем проектировать.</span></footer></>}</main></div>
  </div>

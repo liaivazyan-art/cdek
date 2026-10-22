@@ -22,6 +22,11 @@ export const reportTables = {
   details:[{key:'description',label:'Подробное описание сценария'},{key:'currentApproach',label:'Как задача решается сейчас'},{key:'dataSources',label:'Используемые источники данных'},{key:'missingCapabilities',label:'Каких возможностей не хватает'},{key:'example',label:'Пример из интервью'},{key:'kind',label:'Основание сценария'}],
   records:[],
  },
+ requirements: {
+  columns:[{key:'area',label:'Область требований'},{key:'requirement',label:'Требование'},{key:'role',label:'Для кого актуально'},{key:'analytics',label:'Аналитические возможности'}],
+  details:[{key:'dataAttributes',label:'Необходимые типы данных и атрибуты VoC'},{key:'categories',label:'Структура категорий и уровень детализации'},{key:'journeyLinks',label:'Связи с клиентским путём и пользовательскими сценариями'},{key:'productLinks',label:'Связи с продуктовыми инициативами, релизами и метриками'},{key:'additionalAnalytics',label:'Дополнительные аналитические возможности'}],
+  records:[],
+ },
  recommendations: {
   columns:[{key:'concept',label:'Элемент концепции'},{key:'result',label:'Результат исследования'},{key:'recommendation',label:'Рекомендация'},{key:'nextStep',label:'Следующий шаг'}],
   details:[{key:'conceptDescription',label:'Описание элемента текущей концепции'},{key:'relatedNeeds',label:'Связанные потребности внутренних пользователей'},{key:'rationale',label:'Обоснование рекомендации'},{key:'roles',label:'Роли, для которых актуальна рекомендация'},{key:'evidence',label:'Подтверждающие наблюдения и цитаты'},{key:'sources',label:'Ссылки на первичные данные'},{key:'actions',label:'Предлагаемые действия'}],
