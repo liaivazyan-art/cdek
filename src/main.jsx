@@ -13,11 +13,11 @@ function App(){
  <div className="main-wrap"><button className="mobile-menu mobile-nav-toggle" aria-label="Открыть меню" aria-expanded={mobile} onClick={()=>setMobile(!mobile)}><Menu size={20}/></button>
  <main>{active === 'method' ? <section className="research-overview" aria-labelledby="research-title">
  <div className="hero-row"><h1 id="research-title">{overview.title}</h1></div>
- <div className="research-identity"><p><strong>Проект:</strong> {overview.project}</p><p><strong>{overview.organization}</strong></p></div>
  <div className="overview-content">
  <section><h2>Цель исследования</h2><p>{overview.goal}</p></section>
  <section><h2>Метод</h2><p>{overview.method}</p></section>
- <section><h2>Целевая аудитория</h2><ul>{overview.audience.map(role=><li key={role}>{role}</li>)}</ul></section>
+ <section><h2>Дата проведения</h2><p>{overview.conductedAt || 'Не указана'}</p></section>
+ <section className="overview-audience"><h2>Целевая аудитория</h2><ul>{overview.audience.map(role=><li key={role}>{role}</li>)}</ul></section>
  <section><h2>Предмет исследования</h2><p>{overview.subject}</p></section>
  </div></section> : <>
  <div className="section-heading"><div className="section-counter">0{sections.indexOf(section)+1} <span>/ 06</span></div><span className="section-rule"/><span className="section-kicker">РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЯ</span></div><div className="section-title-row"><div><h2>{section.title}</h2><p>{section.description}</p></div><span className="count-badge">{rows.length} записей</span></div>

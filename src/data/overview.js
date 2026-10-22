@@ -2,8 +2,7 @@
 // Target audience describes the intended scope, not the actual interview sample.
 export const overview = {
   title: 'Исследование потребностей внутренних пользователей VoC',
-  project: 'Feedback System',
-  organization: 'СДЭК · 2026',
+  conductedAt: null, // Fill with the confirmed research date or period.
   goal: 'Определить, как внутренние пользователи работают с обратной связью клиентов, для каких задач и решений используют её, с какими ограничениями сталкиваются и какие данные необходимы им для работы.',
   method: 'Глубинные полуструктурированные интервью.',
   audience: [
